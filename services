@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SlickFinish.com</title>
+  <meta charset="UTF-8" />
+  <meta name= "viewport"
+  content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="ie=edge">
+  <script defer
+  src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stlyesheet" href="style.css">
+</head>
+<style>
+/* CSS Variables */
+:root {
+  --yellow:#EFD346;
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --Black:#24231C;
+  --Blue:#1E51B6;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+      background: linear-gradient(to bottom right, #3366ff 0%, #ffcc00 100%);
+        background-size: cover;
+
+  
+  line-height: 1.4;
+  margin:20px 30px;
+}
+
+
+.btn1 {
+  margin-bottom: 40;
+    background: var(--yellow);
+  color: var(--dark);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Navigation */
+.navbar-brand{
+display: grid;
+grid-gap: 20px;
+grid-template-areas: 'navbar-brand img navbar-brand p'
+}
+.navbar-brand p{
+  margin-bottom:-85px;
+  text-align-left:center;
+  max-height: 100%;
+  position: relative;
+  top: -70px;
+  font-size: xx-large;
+  font-style: bold;
+  justify-content: left;
+  object-fit: all;
+  display: grid;
+  padding:none;
+  grid-gap: 20px;
+
+
+}
+.
+.navbar-brand img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  top: -10px;
+  display: grid;
+  padding:none;
+  grid-gap: 20px;
+}
+.main-nav{
+  background-image: url("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36843941_652132295133042_4673685116885663744_n.jpg?_nc_cat=0&oh=b77aaab1e29cb9430d5c2bf9dd2c44e2&oe=5BDF6F7F");
+background-size: cover;
+background-position: center;
+margin-top: -50px;
+margin-right: -50px;
+margin-left: -50px;
+padding-top: 50px;
+padding-bottom: 100px;
+border: solid 1px black;
+}
+.main-nav:nt(odd) {
+  background-color:nth-child var(--Blue);
+}
+
+.main-nav a:nth-child(even) {
+  background-color: var(--yellow);
+}
+.main-nav ul {
+  display: grid;
+  margin-left: 50px;
+  margin-right: 50px;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  font-family: cambria;
+  background: var(--yellow);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+.main-nav .current {
+  background-color: var(--Blue);
+  color:var(--light);
+}
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+  
+
+}
+
+/* Showcase */
+.showcase {  
+  grid-area: showcase;
+  margin-right: px;
+  min-width: 650px;
+  min-height: 230px;
+  background: url("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36280133_639765763036362_3499202425481330688_n.jpg?_nc_cat=0&oh=101f5e2a81494db8d0af8c9cad52f66c&oe=5BA54AA0");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  just: 40;
+  box-shadow: var(--white);
+}
+
+
+/* Top Box */
+.top-box {
+  background: var(--yellow);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.left-button {
+  background-color: var(--Black);
+  color: var(--light);
+  margin-right: 10px;
+
+}
+.right-button {
+    background-color: var(--Black);
+  color: var(--light);
+  margin-left: -10px;
+}
+.top-box h4 {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 2rem;
+  position: relative;
+  top: -30px;
+}
+.top-box img {
+  color: var(--Black);
+  height: 250px;
+  width: 250px;
+  border: solid;
+  position: relative; 
+  top: -30px;
+}
+
+.top-box-a {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qeRARHytUlyancFgl99bsjKHX1sfR4CTMdKxxMw7lrJ8Knwijg");
+  text-decoration: underline;
+
+  background-size: ;
+  grid-area: top-box-a;
+  background-color: var(--Blue);
+  color:var(--light);
+}
+
+.top-box-b {
+  background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/shine-background-6.jpg");
+  text-decoration: underline;
+  grid-area: top-box-b;
+  background-size: 100% 100%;
+  background-position: center
+  color:var(--Black);
+}
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.boxes h3 {
+  text-decoration: underline;
+  font-size: 2rem;
+
+
+}
+
+.box {
+  background: 
+        linear-gradient(
+        rgba(0, 0, 0, .4),
+        rgba(0, 0, 0, .4)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbsoqpcTX8C7q5z-TZfHftTSyhFDNq4z509X8zQfKCcJ89vKuxA");
+  min-height:250px;
+  background-size:;
+  color:var(--light);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+.box img {
+  border: solid 1px black;
+}
+.box p { font-family: cursive;
+  color: white;
+  text-shadow: -1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top:none;
+}
+.box h3 {
+    text-shadow: -1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+
+}
+.box1{
+    min-height: 250px;
+    background: var(--Blue);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+
+}
+
+footer {
+  margin-top: 1rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+  body {
+    background-size: contain;
+    background-repeat: repeat-y repeat-x; }
+/* Media Queries */
+@media (max-width: 1168px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+      margin-right: 45px;
+      margin-left: 45px;
+        }
+  
+    .main-nav ul {
+    grid-template-columns: 1fr;
+    margin-right: 45px;
+
+  }
+  .showcase {
+    min-height: 300px;
+  }
+  .box{
+    margin-left:45px;
+  }
+    .main-nav{
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-right:-75px;
+    padding-top: none;
+  }
+  .top-box-a{
+
+    font-size: 2rem;
+  }
+  .top-box-b{
+    font-size: 2rem;
+    margin-bottom: 5px;
+
+  }
+  .boxes {
+    margin-right: 45px;
+    font-size: 1.3rem;
+    grid-template-columns: 1fr
+
+ }
+  .boxes h3 {
+    font-size: 2rem;
+ }
+footer {
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+  @media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
+ .showcase {
+  width: 350px;
+ }
+
+ }
+
+</style>
+<body>
+
+</div>
+<div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="/home/">Home</a>
+        </li>
+        <li>
+          <a href="/contact/">About</a>
+        </li>
+        <li>
+          <a class="current"href="/work/">Services</a>
+        </li>
+        <li>
+          <a href="/connect/">Contact</a>
+        </li>
+      </ul>
+    </nav>
+      <section class="top-container">
+      <header class="showcase">
+        <h1></h1>
+        <p></p>
+      </header>
+      <div class="top-box top-box-a">
+        <h4 style="font-family: cursive;">Before</h4>
+       <div class="images">
+         <img class="mySlides1" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36031401_639765326369739_723037983137071104_n.jpg?_nc_cat=0&oh=65ab235e5c7e5db5f94d105238a8e17d&oe=5BAADDDF" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides1" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/q82/c33.0.200.200/p200x200/36242403_639765276369744_4105158350293958656_n.jpg?_nc_cat=0&oh=ee0d74db9d101501d5245ab1b60436ee&oe=5BD9A34C" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides1" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36649160_648979588781646_7018577672401846272_n.jpg?_nc_cat=0&oh=15d2d2cb2754982f0518aea5ab1a2edf&oe=5BE6BA1E" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides1" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36660308_648475722165366_1482934031283650560_n.jpg?_nc_cat=0&oh=044d9b7d1acd1a6d450d0d7736d89c86&oe=5BE664FE" style="min-height: 350px; min-width:350px;">
+
+         <button class="left-button" onclick="plusDivs(-1,0)">&#10094;</button>
+         <button class="right-button" onclick="plusDivs(1,0)">&#10095;</button>
+       </div>
+       <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showDivs(1, 0);
+          showDivs(1, 1);
+
+          function plusDivs(n, no) {
+          showDivs(slideIndex[no] += n, no);
+         }
+
+          function showDivs(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+         }
+        </script>
+      </div>
+      <div class="top-box top-box-b">
+         <h4 style="font-family: cursive;">After</h4>
+       <div class="images">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/35971104_637710663241872_3912775099974942720_n.jpg?_nc_cat=0&oh=d551e2ede12adefe01c3584a1c889baa&oe=5BD68BE7" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c33.0.200.200/p200x200/36188985_637710726575199_5294440747381030912_n.jpg?_nc_cat=0&oh=72d7f9e008ac8295a1783ddafd262de0&oe=5BA35AFB" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/36671338_648979638781641_1857897458047123456_n.jpg?_nc_cat=0&oh=fcfa329a99231ca6c092bf3e4a33266c&oe=5BA39CF7" style="min-height: 350px; min-width:350px;">
+         <img class="mySlides2" src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36031401_639765326369739_723037983137071104_n.jpg?_nc_cat=0&oh=65ab235e5c7e5db5f94d105238a8e17d&oe=5BAADDDF" style="min-height: 350px; min-width:350px;">
+
+         <button class="left-button" onclick="plusDivs(-1,1)">&#10094;</button>
+         <button class="right-button" onclick="plusDivs(1,1)">&#10095;</button>
+       </div>
+        <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showDivs(1, 0);
+          showDivs(1, 1);
+
+          function plusDivs(n, no) {
+          showDivs(slideIndex[no] += n, no);
+         }
+
+          function showDivs(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+         }
+        </script>
+    </section>
+      <section class="boxes">
+     
+      <div class="box">
+        <h3 style="font-family: cambria;">Deluxe Exterior Service Procedure</h3>
+        <p style="font-size: 27px; font-family: cursive;border-bottom:solid 1px white;">Step 1 Pre-Wash<p>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36665804_648979598781645_6813193311264702464_n.jpg?_nc_cat=0&oh=b923e23c0780fa0e144d3e083f83bea1&oe=5BAB2CDE" style="height: 100px; width: 100px;">
+          <p style="font-family: palatino linotype;">
+          In the Pre-wash stage, we thoroughly rinse all dirt and grime that sticks to tires, rims, trim, bumpers, and windows. We focus on these areas with our pressure washer to minimize dirt, stains, sand, insects, etc.<p>
+
+<p style="font-family:cursive; font-size: 27px;border-bottom: solid 1px white;">Step 2 Foam Wash<p><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36665804_648979598781645_6813193311264702464_n.jpg?_nc_cat=0&oh=b923e23c0780fa0e144d3e083f83bea1&oe=5BAB2CDE" style="height: 100px; width: 100px;"><p style="font-family: palatino linotype;">
+In this step we equip our foam/soap cannon attachment to a pressure washer, and this covers the vehicle in a super cleaning formula that removes all stains or dirt. We then hand wash the exterior of the car to ensure a guaranteed shine. After we thoroughly sprayed and hand-washed the vehicle, we then immediately rinse and dry every panel of the car to prevent water streaks.<p>
+
+<p style="font-size: 27px; border-bottom: solid 1px white; font-family:cursive;">Step 3 Tire and Rim Treatment<p><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36665804_648979598781645_6813193311264702464_n.jpg?_nc_cat=0&oh=b923e23c0780fa0e144d3e083f83bea1&oe=5BAB2CDE" style="height: 100px; width: 100px;"><p style="font-family: palatino linotype;">
+At this time, we spray the tires and rims with a special cleansing shampoo. The special cleansing shampoo allows us to deeply scrub the tire and rims to remove all further stains. This fully restores the color of your tires and the shine your rims deserve!<p>
+
+<p style="font-size: 27px; border-bottom: solid 1px white; font-family: cursive;">Step 4 Trim Restoration<p><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36665804_648979598781645_6813193311264702464_n.jpg?_nc_cat=0&oh=b923e23c0780fa0e144d3e083f83bea1&oe=5BAB2CDE" style="height: 100px; width: 100px;"><p style="font-family: palatino linotype;">
+In this Florida heat, your vehicle's trim is becoming more discolored due to an excess of sunlight exposure.We add a protectant layer of a thin plastic coating that we spray on each exterior trim panel that restores color.
+<p style="font-size: 27px; border-bottom:solid 1px white; font-family:cursive;">Step 5 Headlight Restoration<p><p style="font-family: palatino linotype;"> 
+Over time your headlights will sustain fog and yellow tinting which is primarily because of the sun, rain, pollen, etc. We have a full headlight restoration kit that clears and prevents any yellow tinting on the headlight surface.<p>
+<p style="font-size: 27px; font-family: cursive; border-bottom: solid 1px white;">Step 6 Polish and Wax<p><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/36665804_648979598781645_6813193311264702464_n.jpg?_nc_cat=0&oh=b923e23c0780fa0e144d3e083f83bea1&oe=5BAB2CDE" style="height: 100px; width: 100px;"><p style="font-family: palatino linotype;">  
+And finally, we have polish buffing and wax buffing by hand to ensure high-quality definition and shine on your vehicle. One of the best aspects about our polish and wax buffing service is that it reduces any scratches or scruffs and provides a protectant layer to prevent any paint damage or deterioration due to sun, rain, insects, etc. (it will not protect your vehicle from rocks or other vehicles). 
+ <p>
+      </div>
+    </section>  
+
+<body/>
+ <footer>
+   <p>SlickFinish &copy; 2018</p>
+ </footer>
+
+</html>
+  <!-- Wrapper Ends -->
